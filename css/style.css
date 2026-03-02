@@ -247,6 +247,123 @@ img {
   z-index: 2;
   text-align: center;
   padding: var(--gutter);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero-logo {
+  width: clamp(180px, 25vw, 300px);
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* --- Buttons --- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.7rem 1.8rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.btn-primary {
+  background: #e74c3c;
+  color: #fff;
+  border-color: #e74c3c;
+}
+
+.btn-primary:hover {
+  background: #c0392b;
+  border-color: #c0392b;
+}
+
+.btn-outline {
+  background: transparent;
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.btn-outline:hover {
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* --- Bookings Page --- */
+.bookings-page {
+  max-width: 640px;
+}
+
+.bookings-intro {
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--color-text-muted);
+  margin-bottom: 3rem;
+  line-height: 1.7;
+}
+
+.bookings-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.bookings-contact h2 {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.bookings-email {
+  text-align: center;
+}
+
+.bookings-email .btn {
+  font-family: var(--font-body);
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 500;
+}
+
+.bookings-socials {
+  text-align: center;
+}
+
+.bookings-social-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.bookings-social-links svg {
+  flex-shrink: 0;
 }
 
 /* --- Page Content --- */
@@ -394,6 +511,26 @@ img {
 .show-details .time {
   color: var(--color-text-muted);
   font-size: 0.85rem;
+}
+
+.ticket-link {
+  display: inline-block;
+  margin-top: 0.6rem;
+  padding: 0.45rem 1.2rem;
+  background: #e74c3c;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.ticket-link:hover {
+  background: #c0392b;
 }
 
 @media (max-width: 500px) {
