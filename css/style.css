@@ -261,11 +261,86 @@ img {
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
 }
 
+.hero-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  color: #fff;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7), 0 4px 16px rgba(0, 0, 0, 0.5);
+}
+
 .hero-buttons {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+/* --- Band Intro --- */
+.band-intro {
+  max-width: 720px;
+  text-align: center;
+}
+
+.band-intro p {
+  font-size: clamp(1rem, 2vw, 1.15rem);
+  line-height: 1.8;
+  color: var(--color-text-muted);
+  margin-bottom: 1rem;
+}
+
+.band-intro p:last-child {
+  margin-bottom: 0;
+}
+
+.hero-tagline {
+  max-width: 700px;
+  text-align: justify;
+  background: rgba(0, 0, 0, 0.35);
+  padding: 1.2rem 1.5rem;
+  border-radius: 8px;
+}
+
+.hero-tagline p {
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
+  font-weight: 600;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 0.6rem;
+}
+
+.hero-tagline p:last-child {
+  margin-bottom: 0;
+}
+
+/* --- Band Panel (contrasting bleed section) --- */
+.band-panel {
+  position: relative;
+  z-index: 3;
+  margin-top: -6rem;
+  background: #161616;
+  border-top: 3px solid #e67e22;
+  padding: 3rem var(--gutter);
+}
+
+.band-panel-inner {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.band-panel-inner p {
+  font-size: clamp(1rem, 2vw, 1.15rem);
+  font-weight: 500;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.88);
+  margin-bottom: 0.8rem;
+}
+
+.band-panel-inner p:last-child {
+  margin-bottom: 0;
 }
 
 /* --- Buttons --- */
