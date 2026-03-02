@@ -291,14 +291,14 @@ img {
 }
 
 .btn-primary {
-  background: #e74c3c;
+  background: #e67e22;
   color: #fff;
-  border-color: #e74c3c;
+  border-color: #e67e22;
 }
 
 .btn-primary:hover {
-  background: #c0392b;
-  border-color: #c0392b;
+  background: #cf6d17;
+  border-color: #cf6d17;
 }
 
 .btn-outline {
@@ -517,7 +517,7 @@ img {
   display: inline-block;
   margin-top: 0.6rem;
   padding: 0.45rem 1.2rem;
-  background: #e74c3c;
+  background: #e67e22;
   color: #fff;
   font-family: 'Oswald', sans-serif;
   font-size: 0.85rem;
@@ -530,7 +530,7 @@ img {
 }
 
 .ticket-link:hover {
-  background: #c0392b;
+  background: #cf6d17;
 }
 
 @media (max-width: 500px) {
